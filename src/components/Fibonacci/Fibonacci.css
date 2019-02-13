@@ -1,0 +1,9 @@
+.fibonacci input {
+  margin-right: 1vw;
+  display: inline-block;
+}
+
+.fibonacci p {
+  display: inline;
+}
+

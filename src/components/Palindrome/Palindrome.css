@@ -1,0 +1,15 @@
+.palindrome {
+  /*display: grid;*/
+  /*min-width: 300px;*/
+  /*grid-template-columns: 1fr 1fr;*/
+}
+
+.palindrome input {
+  display: inline-block;
+}
+
+.palindrome p {
+  display: inline-block;
+  margin-left: 1vw;
+}
+
