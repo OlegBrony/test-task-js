@@ -18,17 +18,17 @@ class Formula extends Component {
         [e.target.name]: '',
         answer: null,
       });
-    }
-
-    await this.setState({
-      [e.target.name]: e.target.value,
-    });
-
-    const { x, y, z } = this.state;
-    if (x && y && z) {
-      this.setState({
-        answer: this.calculate(x, y, z),
+    } else {
+      await this.setState({
+        [e.target.name]: e.target.value,
       });
+
+      const { x, y, z } = this.state;
+      if (x && y && z) {
+        this.setState({
+          answer: this.calculate(x, y, z),
+        });
+      }
     }
   };
 

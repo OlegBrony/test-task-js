@@ -16,10 +16,8 @@ class CorrectBrackets extends Component {
         brackets: '',
         answer: null,
       });
-    }
-    // if last symbol is '(' or ')'
-    if (e.target.value.split('')[e.target.value.split('').length - 1] === '(' ||
-      e.target.value.split('')[e.target.value.split('').length - 1] === ')') {
+    } else if (e.target.value.split('')[e.target.value.split('').length - 1] === '(' ||
+      e.target.value.split('')[e.target.value.split('').length - 1] === ')') { // if last symbol is '(' or ')'
       this.setState({
         [e.target.name]: e.target.value,
         answer: this.solve(e.target.value),
